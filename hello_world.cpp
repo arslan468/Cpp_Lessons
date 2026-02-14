@@ -5,6 +5,6 @@ int main()
 {
     /*Bir tab boşluk bırakmak için kullanılır
        \t  */
-    cout << "Selam\tCpp";
+    cout << "Selam\tCpp ";
     return 0;
 }
