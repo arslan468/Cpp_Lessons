@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
+#include "../selam.h" 
 
 using namespace std;
 
 int main ()
 {
+    selamlama();
     int Num1, Num2, toplam = 0;
     
     cout << "Girilen iki sayı arasında ki sayıları toplar" << endl << "Girmiş olduğunuz sayılar toplama dahil değildir." << endl;
@@ -29,6 +31,6 @@ int main ()
 
     cout << "Toplamları: " << toplam << endl;
     
-
+    veda();
 
 }

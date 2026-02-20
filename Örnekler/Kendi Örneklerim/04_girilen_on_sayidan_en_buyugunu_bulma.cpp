@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
+#include "../selam.h" 
 using namespace std;
 
 int main ()
 {
+    selamlama();
     int sayi_dizisi[10] {} , En_Buyuk = 0;
     int boyut = ((sizeof(sayi_dizisi))/sizeof(sayi_dizisi[0]));
 
@@ -22,6 +24,6 @@ int main ()
     }
 
     cout << "\nGirmiş olduğunuz sayılardan en büyüğü: " << En_Buyuk << endl;
-    
+    veda();
     return 0;
 }

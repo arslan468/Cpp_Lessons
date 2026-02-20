@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
+#include "../selam.h" 
 
 using namespace std;
 
 int main()
 {
+    selamlama();
     int Num1, Num2;
     cout << "\nBirinci sayıyı giriniz: "; cin >> Num1;
     
@@ -22,5 +24,6 @@ int main()
     {
         cout << "İkinci sayı büyüktür birinci sayıdan" << endl;
     }
-
+    veda();
+    return 0;
 }

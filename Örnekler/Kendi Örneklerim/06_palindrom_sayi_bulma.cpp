@@ -1,9 +1,12 @@
 #include <iostream>
 #include <string>
+#include "../selam.h" 
 using namespace std;
 //78987
+
 int main()
 {
+    selamlama();
     int sayi, bir, on, yuz, bin, onbin;
     cout << "\n5 basamaklı bir sayı giriniz: ";
     cin >> sayi;
@@ -23,16 +26,26 @@ int main()
         if (on == bin && (bin+1) == yuz && (on+1) == yuz)
         {
             cout << endl << "Girmiş olduğunuz sayı palindrom sayıdır." << endl;
+            
+            veda();
             return 0;
         }
         else
         {
             cout << endl << "Girmiş olduğunuz sayı palindrom sayı değildir." << endl;
+            
+            veda();
             return 0;
         }
     }
 
     cout << endl << "Girmiş olduğunuz sayı palindrom sayı değildir." << endl;
+    
+    
+    
+    
+    
+    veda();
     return 0;
 
 

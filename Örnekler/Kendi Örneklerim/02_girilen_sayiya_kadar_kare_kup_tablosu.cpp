@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
+#include "../selam.h" 
 using namespace std;
 
 int main ()
 {
+    selamlama();
     int GirilenSayi;
     double kare, kup;
 
@@ -16,4 +18,6 @@ int main ()
     {
         cout << i << "\t" << (i*i) << "\t\t" << (i*i*i) << endl;
     }
+    veda();
+    return 0;
 }
