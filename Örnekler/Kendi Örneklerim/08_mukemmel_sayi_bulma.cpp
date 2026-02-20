@@ -10,6 +10,33 @@ using namespace std;
 int main()
 {
     selamlama();
-    int sayi, bolenler;
+    int sayi, toplam = 0;
+    cout << "Bir sayı giriniz: ";
+    cin >> sayi;
 
+    for (int i = 1; i < sayi; i++)
+    {
+        if ( sayi % i == 0)
+        {
+            toplam += i;
+        }
+    }
+
+    if (sayi == toplam)
+    {
+        cout  << endl <<"'"<<sayi<< "' mükemmel sayıdır.";
+    }
+
+    else
+    {
+        cout << endl  <<"'"<<sayi<< "' mükemmel sayı değildir.";
+    }
+    
+
+
+
+
+    veda();
+    return 0;
 }
+
