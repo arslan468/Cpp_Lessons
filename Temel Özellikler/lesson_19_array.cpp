@@ -6,6 +6,7 @@ using namespace std;
 
 int main ()
 {
+    selamlama();
     string car[5] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"};
     string cars[5];
     cars[0] = "Volvo";
@@ -26,4 +27,8 @@ int main ()
 
 
     cout << "array length = " << (sizeof(car) / sizeof(car[0])) << endl;
+
+
+    veda ();
+    return(0);
 }
