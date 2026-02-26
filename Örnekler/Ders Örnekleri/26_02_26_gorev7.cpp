@@ -46,10 +46,6 @@ int main ()
         ilkAd = ad;
     }
 
-
-
-
-
     cout << endl  << "Soyadıon tersten yazılışı: ";
     int deger = (soyad.length() - 1);
     for (int i = deger ; i >= 0; i--)
@@ -58,7 +54,7 @@ int main ()
     }
     cout << endl;
 
-    cout  << endl  << "Merhaba " << ilkAd << "! Soyadınız " << soyad << " " 
+    cout  << endl  << "Merhaba " << ilkAd << " Soyadınız " << soyad << " " 
          << soyad.length() << " karakterden oluşuyor." << endl;
 
     veda();
