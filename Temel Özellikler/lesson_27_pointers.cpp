@@ -12,7 +12,11 @@ int main ()
 
     string *ptr = &gun;
 
-    cout << gun << endl << &gun << endl << ptr << endl << *ptr << endl;
+    cout << endl << gun << endl << &gun << endl << ptr << endl << *ptr << endl;
+
+    *ptr = "pazartesi";
+
+    cout << endl << gun << endl << &gun << endl << ptr << endl << *ptr << endl;
 
 
 
