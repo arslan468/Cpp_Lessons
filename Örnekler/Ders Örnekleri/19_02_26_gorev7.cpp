@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
+#include "../selam.h" 
 using namespace std;
 
 int main()
 {
+    selamlama();
     int Num1;
     int Num2;
 
@@ -33,6 +35,7 @@ int main()
 
     
 
-
+    veda();
+    return 0;
 
 }
