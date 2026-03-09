@@ -1,5 +1,7 @@
 #include <iostream>
 #include <iomanip>
+#include "../selam.h" 
+
 using namespace std;
 
 double sinyalFiltrele(double hamMesafe);
@@ -9,6 +11,8 @@ void sistemDurumu(double ham, double filtreli);
 void acilFren();
 
 int main() {
+    selamlama();
+    
     double sensorVerileri[] = {25.5, -5.0, 30.2, 999.9, 4.0, 45.0};
 
     cout << "--- OTONOM ARAC KONTROL MERKEZI ---" << endl;
@@ -26,7 +30,7 @@ int main() {
         acilFren();
         }
     }
-
+    veda();
     return 0;
 }
 
