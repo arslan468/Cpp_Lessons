@@ -35,7 +35,7 @@ int main() {
 
     
     hasarAl(ptr1, 50);
-   hasarAl(ptr2, 100);
+    hasarAl(ptr2, 100);
 
 
     cout << "\n[Savaş gerçekleşti!]" << endl;
@@ -50,6 +50,7 @@ int main() {
 
     // SENARYO 3: Strateji Değişimi
     // TODO: Savaşçı ve Büyücü ekipmanlarını (Atk ve Arm) takas ediyor.
+    swapEkipman(atk1, arm1, atk2, arm2);
     cout << "\n[Ekipman takası yapıldı!]" << endl;
 
 
@@ -95,9 +96,16 @@ void seviyeAtla(int &hp, int &attack, int &armor, double katsayi)
     armor = armor * katsayi;
 }
 
+
 void swapEkipman(int &attack1, int &armor1, int &attack2, int &armor2)
 {
+    int tempAttack = attack1;
+    attack1 = attack2;
+    attack2 = tempAttack;
 
+    int tempArmor = armor1;
+    armor1 = armor2;
+    armor2 = tempArmor;
 }
 
 int* enDusukHP(int *hp1, int *hp2, int *hp3) {
