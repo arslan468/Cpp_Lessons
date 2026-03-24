@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../selam.h" 
+#include "../selam.h"
 
 using namespace std;
 
@@ -10,12 +10,12 @@ void seviyeAtla(int &hp, int &attack, int &armor, double katsayi);
 
 void swapEkipman(int &attack1, int &armor1, int &attack2, int &armor2);
 
-int* enDusukHP(int *hp1, int *hp2, int *hp3);
+int *enDusukHP(int *hp1, int *hp2, int *hp3);
 
 void karakterYazdir(string isim, int hp, int attack, int armor);
 
-
-int main() {
+int main()
+{
     // Karakter Tanımlamaları
     string isim1 = "Savaşçı", isim2 = "Büyücü", isim3 = "Koruyucu";
     int hp1 = 150, atk1 = 80, arm1 = 60;
@@ -33,10 +33,8 @@ int main() {
     int *ptr2 = &hp2;
     int *ptr3 = &hp3;
 
-    
     hasarAl(ptr1, 50);
     hasarAl(ptr2, 100);
-
 
     cout << "\n[Savaş gerçekleşti!]" << endl;
     // SENARYO 2: Gelişim
@@ -47,19 +45,16 @@ int main() {
     seviyeAtla(rfrs_hp, rfrs_atk, rfrs_arm, 1.5);
     cout << "\n[Koruyucu seviye atladı!]" << endl;
 
-
     // SENARYO 3: Strateji Değişimi
     // TODO: Savaşçı ve Büyücü ekipmanlarını (Atk ve Arm) takas ediyor.
     swapEkipman(atk1, arm1, atk2, arm2);
     cout << "\n[Ekipman takası yapıldı!]" << endl;
-
 
     // SENARYO 4: Kritik Müdahale
     // TODO: enDusukHP ile en zayıf karakteri bulun ve adres üzerinden HP'sini 50artırın.
     int *dusukcan = enDusukHP(ptr1, ptr2, ptr3);
     cout << "\n[Kritik İyileştirme Uygulanıyor...]" << endl;
     *dusukcan += 50;
-
 
     // Final Durumu
     cout << "\n=== OYUN SONU İSTATİSTİKLERİ ===" << endl;
@@ -70,8 +65,6 @@ int main() {
 
     return 0;
 }
-
-
 
 void hasarAl(int *hp, int hasar)
 {
@@ -86,7 +79,6 @@ void hasarAl(int *hp, int hasar)
         *hp = 0;
         cout << "Öldünüz Can: 0";
     }
-
 }
 
 void seviyeAtla(int &hp, int &attack, int &armor, double katsayi)
@@ -95,7 +87,6 @@ void seviyeAtla(int &hp, int &attack, int &armor, double katsayi)
     attack = attack * katsayi;
     armor = armor * katsayi;
 }
-
 
 void swapEkipman(int &attack1, int &armor1, int &attack2, int &armor2)
 {
@@ -108,15 +99,24 @@ void swapEkipman(int &attack1, int &armor1, int &attack2, int &armor2)
     armor2 = tempArmor;
 }
 
-int* enDusukHP(int *hp1, int *hp2, int *hp3) {
+int *enDusukHP(int *hp1, int *hp2, int *hp3)
+{
     int *enDusuk = hp1;
 
-    if (*hp2 < *enDusuk) enDusuk = hp2;
-    if (*hp3 < *enDusuk) enDusuk = hp3;
-    return enDusuk; 
+    if (*hp2 < *enDusuk)
+        enDusuk = hp2;
+    if (*hp3 < *enDusuk)
+        enDusuk = hp3;
+    return enDusuk;
 }
 
 void karakterYazdir(string isim, int hp, int attack, int armor)
 {
-    cout << endl << "===========" << endl << "İsim: " << isim << endl << "Can: " << hp << endl << "Saldırı: " << attack << endl << "Kalkan: " << armor << endl << "===========" << endl;
+    cout << endl
+         << "===========" << endl
+         << "İsim: " << isim << endl
+         << "Can: " << hp << endl
+         << "Saldırı: " << attack << endl
+         << "Kalkan: " << armor << endl
+         << "===========" << endl;
 }

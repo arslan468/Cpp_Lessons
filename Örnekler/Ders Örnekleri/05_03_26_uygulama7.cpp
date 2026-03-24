@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include "../selam.h" 
+#include "../selam.h"
 
 using namespace std;
 
@@ -10,14 +10,15 @@ bool kritikSeviye(double mesafe);
 void sistemDurumu(double ham, double filtreli);
 void acilFren();
 
-int main() {
+int main()
+{
     selamlama();
-    
+
     double sensorVerileri[] = {25.5, -5.0, 30.2, 999.9, 4.0, 45.0};
 
     cout << "--- OTONOM ARAC KONTROL MERKEZI ---" << endl;
 
-    for (int i = 0; i < 6; i++) 
+    for (int i = 0; i < 6; i++)
     {
         double ham = sensorVerileri[i];
         // 1. Veriyi filtrele
@@ -25,9 +26,9 @@ int main() {
         // 2. Durumu ekrana yazdir
         sistemDurumu(ham, temiz);
         // 3. Kritik mesafe kontrolü yap
-        if (kritikSeviye(temiz)) 
+        if (kritikSeviye(temiz))
         {
-        acilFren();
+            acilFren();
         }
     }
     veda();
@@ -51,12 +52,13 @@ void hataRaporla()
 {
     static int sayac;
     sayac++;
-    cout << endl << "Sensör hatası! Toplam Hata: " << sayac << endl;
+    cout << endl
+         << "Sensör hatası! Toplam Hata: " << sayac << endl;
 }
 
 bool kritikSeviye(double mesafe)
 {
-    if (mesafe < 5 )
+    if (mesafe < 5)
     {
         return true;
     }
@@ -68,10 +70,12 @@ bool kritikSeviye(double mesafe)
 
 void sistemDurumu(double ham, double filtreli)
 {
-    cout << endl << "Ham veri: " << ham << "    //      " << "Filtrelenmiş veri: " << filtreli << endl; 
+    cout << endl
+         << "Ham veri: " << ham << "    //      " << "Filtrelenmiş veri: " << filtreli << endl;
 }
 
 void acilFren()
 {
-    cout << endl << "!!! ACİL DURUM FRENİ AKTİF !!!" << endl;
+    cout << endl
+         << "!!! ACİL DURUM FRENİ AKTİF !!!" << endl;
 }

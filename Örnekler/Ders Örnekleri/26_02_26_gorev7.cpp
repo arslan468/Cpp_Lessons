@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include "../selam.h" 
+#include "../selam.h"
 
 using namespace std;
 
-int main ()
+int main()
 {
     selamlama();
 
@@ -15,48 +15,52 @@ int main ()
     getline(cin, ad);
 
     int uzunluk = ad.length();
-    cout << endl << "Girdinin uzunluğu: " << uzunluk << endl;
+    cout << endl
+         << "Girdinin uzunluğu: " << uzunluk << endl;
 
     string buyukAd = ad;
     for (int i = 0; i < uzunluk; i++)
     {
         buyukAd[i] = toupper(buyukAd[i]);
     }
-    cout << endl  << "Büyükk harf: " << buyukAd << endl;
+    cout << endl
+         << "Büyükk harf: " << buyukAd << endl;
 
-
-    
     string kucukAd = ad;
     for (int i = 0; i < uzunluk; i++)
     {
         kucukAd[i] = tolower(kucukAd[i]);
     }
-    cout << endl  << "Küçük harf: " << kucukAd << endl;
-
-
+    cout << endl
+         << "Küçük harf: " << kucukAd << endl;
 
     int boslukIndeksi = ad.find(' ');
     string ilkAd = "";
     string soyad = "";
 
-    if (boslukIndeksi != string::npos) {
+    if (boslukIndeksi != string::npos)
+    {
         ilkAd = ad.substr(0, boslukIndeksi);
         soyad = ad.substr(boslukIndeksi + 1);
-    } else {
+    }
+    else
+    {
         ilkAd = ad;
     }
 
-    cout << endl  << "Soyadıon tersten yazılışı: ";
+    cout << endl
+         << "Soyadıon tersten yazılışı: ";
     int deger = (soyad.length() - 1);
-    for (int i = deger ; i >= 0; i--)
+    for (int i = deger; i >= 0; i--)
     {
         cout << soyad[i];
     }
     cout << endl;
 
-    cout  << endl  << "Merhaba " << ilkAd << " Soyadınız " << soyad << " " 
+    cout << endl
+         << "Merhaba " << ilkAd << " Soyadınız " << soyad << " "
          << soyad.length() << " karakterden oluşuyor." << endl;
 
     veda();
-    return(0);
+    return (0);
 }

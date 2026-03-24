@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../selam.h" 
+#include "../selam.h"
 
 using namespace std;
 
@@ -16,7 +16,7 @@ int main()
 
     for (int i = 1; i < sayi; i++)
     {
-        if ( sayi % i == 0)
+        if (sayi % i == 0)
         {
             toplam += i;
         }
@@ -24,19 +24,16 @@ int main()
 
     if (sayi == toplam)
     {
-        cout  << endl <<"'"<<sayi<< "' mükemmel sayıdır.";
+        cout << endl
+             << "'" << sayi << "' mükemmel sayıdır.";
     }
 
     else
     {
-        cout << endl  <<"'"<<sayi<< "' mükemmel sayı değildir.";
+        cout << endl
+             << "'" << sayi << "' mükemmel sayı değildir.";
     }
-    
-
-
-
 
     veda();
     return 0;
 }
-

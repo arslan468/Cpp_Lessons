@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-#include "../selam.h" 
+#include "../selam.h"
 using namespace std;
 
-int main ()
+int main()
 {
     selamlama();
     int GirilenSayi;
@@ -12,11 +12,11 @@ int main ()
     cout << "\n\nPozitif bir sayı giriniz girmiş olduğunuz sayıya kadar olan sayıların karesini ve küpü tablo halinde oluşturulcak.\n\t->";
     cin >> GirilenSayi;
 
-    cout << "\tKare---------Küp\t\t"<< endl;
+    cout << "\tKare---------Küp\t\t" << endl;
 
     for (int i = 1; i <= GirilenSayi; i++)
     {
-        cout << i << "\t" << (i*i) << "\t\t" << (i*i*i) << endl;
+        cout << i << "\t" << (i * i) << "\t\t" << (i * i * i) << endl;
     }
     veda();
     return 0;

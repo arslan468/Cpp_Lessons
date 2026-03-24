@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../selam.h" 
+#include "../selam.h"
 using namespace std;
 
 int main()
@@ -14,11 +14,11 @@ int main()
     cout << "\nİkinci sayınızı giriniz: ";
     cin >> Num2;
 
-    cout << "Toplam: " << (Num1+Num2) << endl;
-    cout << "Farkı: " << (Num1-Num2) << endl;
-    cout << "Çarpım: " << (Num1*Num2) << endl;
-    cout << "Bölüm: " << (Num1/Num2) << endl;
-    cout << "Mod sonucu: " << (Num1%Num2) << endl;
+    cout << "Toplam: " << (Num1 + Num2) << endl;
+    cout << "Farkı: " << (Num1 - Num2) << endl;
+    cout << "Çarpım: " << (Num1 * Num2) << endl;
+    cout << "Bölüm: " << (Num1 / Num2) << endl;
+    cout << "Mod sonucu: " << (Num1 % Num2) << endl;
     double ondaliklibolum = static_cast<double>(Num1) / Num2;
     cout << "Ondalıklı bölüm: " << ondaliklibolum << endl;
     int buyuksayi = (Num1 > Num2) ? Num1 : Num2;
@@ -28,14 +28,7 @@ int main()
     bool yanit2 = (Num2 > 0) ? true : false;
 
     cout << "Sıfırdan büyük durum kontrol etme\n Birinci Sayı ->  " << yanit1 << "\nİkinci Sayı -> " << yanit2 << endl;
-    
-
-
-
-
-    
 
     veda();
     return 0;
-
 }
