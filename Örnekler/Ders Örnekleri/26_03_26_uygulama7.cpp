@@ -40,25 +40,24 @@ int main()
     cout << endl
          << " Ortam Sıcaklık ortalaması: " << sicaklikOrt << " ºC" << endl;
 
-
     // 2) Anormal ölçüm sayısını yazdırın (sinir: 18-28 C)
     int anormalAdet = anormalSayisi(sicaklik, SAAT, 18.0, 28.0);
-    cout << endl <<"=======================";
+    cout << endl
+         << "=======================";
 
-    cout << endl << "Anormal olan ölçümler " << anormalAdet << " adet" << endl;
-
+    cout << endl
+         << "Anormal olan ölçümler " << anormalAdet << " adet" << endl;
 
     // 3) Anormal ölçümleri uyariYazdir ile listeleyin
     uyariYazdir(sicaklik, SAAT, 18.0, 28.0);
 
-
     // 4) Kat bazlı sıcaklık raporunu yazdırın
     katRaporu(katOda, KAT);
 
-
     // 5) En yüksek CO2 odasını bulun ve gerekirse uyarı verin
     int maksCO2Indeks = maksIndeks(co2, KAT);
-    cout << endl <<"=======================" << endl;
+    cout << endl
+         << "=======================" << endl;
 
     cout << endl
          << "En yüksek CO2 ölçümü: " << co2[maksCO2Indeks] << " ppm ( ❗️" << (maksCO2Indeks + 1) << " numaralı oda)" << endl;
@@ -66,7 +65,7 @@ int main()
     {
         cout << endl
              << "🚨Uyarı‼️ : Oda " << (maksCO2Indeks + 1) << " CO2 seviyesi yüksek!" << endl;
-    // 6) Bu hafta ve geçen hafta enerji ortalamalarını
+        // 6) Bu hafta ve geçen hafta enerji ortalamalarını
         double buHaftaOrt = ortalama(buHafta, 7);
         double gecenHaftaOrt = ortalama(gecenHafta, 7);
 
@@ -80,7 +79,7 @@ int main()
         cout << endl
              << "Enerji tüketiminde ki bir haftalık değişim: " << yuzdeDegisim << " %" << endl;
     }
-    
+
     veda();
     return 0;
 }
@@ -122,18 +121,19 @@ int anormalSayisi(const double sicaklik[], int n, double altSinir, double ustSin
 void uyariYazdir(const double sicaklik[], int n, double alt, double ust)
 {
     int sayac = 1;
-    
+
     for (int i = 0; i < n; i++)
     {
         if (sicaklik[i] < alt || sicaklik[i] > ust)
         {
-            cout << endl<< sayac << ". ölçüm : " << sicaklik[i] << " ºC";
+            cout << endl
+                 << sayac << ". ölçüm : " << sicaklik[i] << " ºC";
             sayac += 1;
         }
-        
     }
 
-    cout << endl <<"=======================" << endl;
+    cout << endl
+         << "=======================" << endl;
 }
 
 void katRaporu(const double sicakliklar[][4], int katSayisi)
@@ -141,7 +141,8 @@ void katRaporu(const double sicakliklar[][4], int katSayisi)
     for (int i = 0; i < katSayisi; i++)
     {
         double katOrt = ortalama(sicakliklar[i], ODA);
-        cout << endl << (i + 1) << ". katın ortalama sıcaklığı ☀️ : " << katOrt << " ºC" << endl;
+        cout << endl
+             << (i + 1) << ". katın ortalama sıcaklığı ☀️ : " << katOrt << " ºC" << endl;
     }
 }
 
