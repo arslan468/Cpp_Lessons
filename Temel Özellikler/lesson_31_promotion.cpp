@@ -14,7 +14,10 @@ int main ()
 
     cout << karakter << endl;
 
+    cout << "sizeof(karakter): " << sizeof(karakter) << endl;
+    // Promotion bellek boyutunu değiştirmez
     int donus = promotion(karakter);
+    cout << "sizeof(karakter): " << sizeof(karakter) << endl;
 
     cout << donus;
 
