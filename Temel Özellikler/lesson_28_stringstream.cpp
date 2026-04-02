@@ -33,10 +33,8 @@ int main ()
 
     cout << "Fiyat giriniz: ";
     getline(cin,birsicim);
-    //cin >> Fiyat;
     stringstream(birsicim) >> Fiyat;
     cout << "Adedi: ";
-    //cin >> Adedi;
     getline (cin,birsicim);
     stringstream(birsicim) >> Adedi;
     cout << "Tutari: " << Fiyat*Adedi << " TL\n" << endl << "Programı bitirmek için bir tuşa basınız. ";
