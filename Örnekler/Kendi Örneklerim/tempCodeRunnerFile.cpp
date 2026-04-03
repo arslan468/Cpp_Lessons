@@ -1,8 +1,20 @@
-    int adet = sizeof(notlar) / sizeof(notlar[0]);
-    for (int i = 0; i < adet; i++) {
-    cout << notlar[i] << " ";
+#include <iostream>
+#include <string>
+#include "../selam.h"
+
+using namespace std;
+
+int main ()
+{
+    string dizi[5];
+    int boyut = (sizeof(dizi)/4);
+    
+    for (int i = 0; i <boyut; i++)
+    {
     }
-    // → 85 90 72 68 95
-    for (int not : notlar) {
-    cout << not << " ";
-    }
+
+
+    
+
+    return 0;
+}
