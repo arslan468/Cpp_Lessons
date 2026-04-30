@@ -27,7 +27,7 @@ double enYuksek(const double* sicakliklar, int n)
 
 double enDusuk(const double* sicakliklar, int n)
 {
-    double enDus=0;
+    double enDus=1000;
     for(int i=0; i<n; i++)
     {
         if(enDus > sicakliklar[i])
@@ -36,6 +36,6 @@ double enDusuk(const double* sicakliklar, int n)
         }
     }
 
-    return emDus=0;
+    return enDus;
 
 }

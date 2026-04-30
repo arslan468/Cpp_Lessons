@@ -26,8 +26,9 @@ cout << endl << "En düşük sıcaklık: " << geciciDeger<< endl;
 geciciDeger = celsiusToFahrenheit(ort);
 cout << endl << "Sıcaklık Fahrenheit cinsinden: " << geciciDeger<< endl;
 
-geciciDeger = fahrenheitToCelsius(geciciDeger);
-cout << endl << "Sıcaklık Celsius cinsinden: " << geciciDeger<< endl;
+//istenmiyor
+//geciciDeger = fahrenheitToCelsius(geciciDeger);
+//cout << endl << "Sıcaklık Celsius cinsinden: " << geciciDeger<< endl;
 
 geciciDeger = celsiusToKelvin(ort);
 cout << endl << "Sıcaklık Kelvin cinsinden: : " << geciciDeger<< endl;

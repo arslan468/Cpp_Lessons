@@ -15,4 +15,4 @@ double fahrenheitToCelsius(double f)
 double celsiusToKelvin(double c)
 {
     return (c+273.15);
-}cel
+}
