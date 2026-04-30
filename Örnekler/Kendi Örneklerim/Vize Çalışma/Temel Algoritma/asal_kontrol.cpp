@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int n = 997;
+    int n = 91;
     bool asalmi = true;
     if (n <= 1) asalmi = false;
     for(int i = 2; i * i <= n; i++) {
