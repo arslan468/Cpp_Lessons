@@ -101,16 +101,8 @@ int main() {
         }
     }
 
-
-
-
-
-
-
     return 0;
 }
-
-
 
 // 4. ADIM: Fonksiyon gövdelerini aşağıya yazın.
 
