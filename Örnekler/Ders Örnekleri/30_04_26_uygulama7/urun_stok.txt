@@ -1,0 +1,3 @@
+Modem 2350 33
+Mouse 1599 12
+Klavye 5 2
