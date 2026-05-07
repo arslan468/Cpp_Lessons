@@ -3,16 +3,9 @@
 #include <string>
 #include <fstream>
 
-// Gerekli diğer kütüphaneleri ekleyiniz
+
 using namespace std;
-/** * LABORATUVAR GÖREVİ:
-* 1. stokuListele: Dosyayı okuma modunda açıp içeriği ekrana basmalı.
-* 2. urunEkle: Mevcut veriyi bozmadan dosya sonuna ekleme yapmalı.
-* 3. urunSil & fiyatGuncelle: "Oku-Yaz" algoritmasını kullanmalı.
-* (İpucu: Orijinal dosyayı okurken, kriter dışı verileri geçici bir dosyaya
-aktarın.)
-*/
-// Fonksiyon prototiplerini buraya tanımlayın
+
 void stokuListele(const string& dosyaAdi);
 void urunEkle(const string& dosyaAdi, const string& urun, double fiyat, int adet);
 void urunSil(const string& dosyaAdi, const string& hedef);
@@ -20,34 +13,7 @@ void fiyatGuncelle(const string& dosyaAdi, const string& hedef, double yeniFiyat
 
 int main() {
     string dosya_adim = "urun_stok.txt";
-    // 1. ADIM: urun_stok.txt dosyasını oluşturun ve içine örnek 3 adet ürün yazdırın.
-    ofstream kls;
-    kls.open(dosya_adim);
-    if (!kls)
-    {
-        cout << "Dosya açılamadı!" << endl;
-        return 1;
-    }
-    else
-    {
-
-        kls << "Modem" << " " << "2350" << " " << "33"<<endl;
-        kls  << "Mouse" << " " << " 1599" << " " << "12"<< endl;
-        kls << "Klavye" << " " << "2200" << " " << "2"<< endl;
-
-        cout << endl  << "3 adet ürün urun_stok adlı dosyaya yazıldı" << endl << endl;
-    }
-    kls.close();
-
     stokuListele(dosya_adim);
-
-    //string yeni_urun = "Pil";
-    //double yeni_fiyat = 58, guncel_f=558;
-    //int yeni_stok = 4;
-    //urunEkle(dosya_adim, yeni_urun, yeni_fiyat, yeni_stok);
-    //urunSil(dosya_adim, yeni_urun);
-    //fiyatGuncelle(dosya_adim, yeni_urun, guncel_f);
-    //stokuListele(dosya_adim);
 
     int secim = 0;
     string urunAdi;
@@ -103,8 +69,6 @@ int main() {
 
     return 0;
 }
-
-// 4. ADIM: Fonksiyon gövdelerini aşağıya yazın.
 
 void stokuListele(const string& dosyaAdi)
 {
