@@ -11,10 +11,6 @@ int main()
 
     cout << "\n" << sqrt(64);//karekök
     cout << "\n" << round(2.5); //yuvarlama
-    cout << "\n" << log(20);
+    cout << "\n" << log(20)<<endl;
 
 }
-
-
-
-

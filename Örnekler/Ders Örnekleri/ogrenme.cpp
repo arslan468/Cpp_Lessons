@@ -107,3 +107,9 @@ int main() {
     // main fonksiyonu bittiği an nesneler stack'ten silinir ve YIKICI (Destructor) tetiklenir.
     return 0;
 }
+
+
+
+
+
+

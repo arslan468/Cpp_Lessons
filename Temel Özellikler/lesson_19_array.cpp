@@ -7,7 +7,7 @@ using namespace std;
 int main ()
 {
     selamlama();
-    string car[5] = {"Volvo", "BMW", "Ford", "Mazda", "Tesla"};
+    string car[5] = {"Audi", "BMW", "TOGG", "TOGG", "Tesla"};
     string cars[5];
     cars[0] = "Volvo";
     cars[1] = "BMW";
@@ -16,17 +16,17 @@ int main ()
     cars[4] = "Tesla";
     for (int i = 0; i < 5; i++) 
     {
-        cout << i << " = " << car[i] << "\n";
+        cout << (i+1) << " = " << cars[i] << "\n";
 
     }
     cout << endl << endl;
     for (int i = 0; i < 5; i++) 
     {
-        cout << i << " = " << car[i] << "\n";
+        cout << (i+1)<< " = " << car[i] << "\n";
     }
 
 
-    cout << "array length = " << (sizeof(car) / sizeof(car[0])) << endl;
+    cout <<endl << "array length = " << (sizeof(cars) / sizeof(cars[0])) << endl;
 
 
     veda ();

@@ -8,6 +8,6 @@ int main()
     auto y = 3241;
     cout << "\nDeğer: " << y << "\nTür: " << typeid(y).name();
     auto z = 32.32;
-    cout << "\nDeğer: " << z << "\nTür: " << typeid(z).name();
+    cout << "\nDeğer: " << z << "\nTür: " << typeid(z).name() << endl;
     
 } 

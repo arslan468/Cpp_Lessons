@@ -6,8 +6,6 @@ using namespace std;
 int main()
 {
     auto x = 3, y = 3;
-
-    
     cout << "Sayı giriniz: ";
     cin >> x;
     cout << "Sayı giriniz: ";

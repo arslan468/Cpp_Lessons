@@ -9,5 +9,5 @@ int main()
     cout << "\nToplam: " << x + y << "\n" << "toplamlarının x ile çarpımı: " <<  (x + y) * x;
     ++x;
     --y;
-    cout << "\n++x:  " << x << "\n--y:  " << y;
+    cout << "\n++x:  " << x << "\n--y:  " << y <<endl;
 }
