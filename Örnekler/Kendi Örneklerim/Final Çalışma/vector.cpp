@@ -18,28 +18,28 @@ int main()
         v.push_back(i);
     }
 
-    cout << v.size() <<endl;
+    /*cout << v.size() <<endl;
     cout << v.capacity() <<endl;
     cout <<endl<< "===================="<<endl;
 
-
+    */
     if (!v.empty())
     {
         for (int eleman : v)
         {
-            cout << eleman<< endl;
+            cout << eleman<< "\t";
         }
         cout <<endl<< "===================="<<endl;
 
         for (int eleman : v1)
         {
-            cout << eleman<< endl;
+            cout << eleman<< "\t";
         }
         cout <<endl<< "===================="<<endl;
 
         for (int eleman : v2)
         {
-            cout << eleman<< endl;
+            cout << eleman<< "\t";
         }
         cout <<endl<< "===================="<<endl;
     }
@@ -59,8 +59,8 @@ int main()
         {
             //cout << dongu << endl;
             dongu*=2;
-        }
-        cout <<endl<< "===================="<<endl;/*
+        }/*
+        cout <<endl<< "===================="<<endl;
         v1.insert(v1.end(), v2.begin(), v2.end() );
         for (int eleman : v1)
         {
@@ -79,9 +79,9 @@ int main()
     
     if(!v.empty())
     {
-        for (int dongu : v)
+        for (const int& dongu : v)
         {
-            cout << dongu << endl;
+            cout << dongu << "\t";
         }
     }
     else
