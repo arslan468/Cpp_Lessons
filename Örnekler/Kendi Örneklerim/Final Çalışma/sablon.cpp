@@ -15,6 +15,5 @@ int main()
 
 
     veda();
-
     return 0;
 }
