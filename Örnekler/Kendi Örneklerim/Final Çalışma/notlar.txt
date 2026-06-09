@@ -1,0 +1,5 @@
+alp 32.5
+rabia 34
+yusuf arslan 55
+elif arslan 99
+mehmet 10
