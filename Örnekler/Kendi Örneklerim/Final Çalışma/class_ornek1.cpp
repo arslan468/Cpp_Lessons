@@ -19,7 +19,7 @@ class Araba
         this->marka=marka;
         this->model=model;
         hiz=0;
-        cout << marka << "Oluşturuldu"<<endl; 
+        cout << marka << "\tOluşturuldu"<<endl; 
     }
     ~Araba()
     {
@@ -52,14 +52,11 @@ class Araba
 int main()
 {
     selamlama();
-    Araba a1("TOGG", "T10F");
+    Araba a1("TOGG", 2026);
     a1.hizlan(230);
     a1.frenYap(300);
     a1.frenYap(40);
     a1.bilgiGoster();
-    a1.~Araba();
-
-
     veda();
     return 0;
 }
