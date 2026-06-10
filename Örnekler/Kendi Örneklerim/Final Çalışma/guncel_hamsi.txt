@@ -2,3 +2,7 @@ mehmet	43
 alp	61
 yusuf	32
 eren	63
+mehmet	43
+alp	61
+yusuf	32
+eren	63

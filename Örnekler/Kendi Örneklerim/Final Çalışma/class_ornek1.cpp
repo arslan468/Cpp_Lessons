@@ -11,8 +11,7 @@ class Araba
 {
     private: 
         string marka;
-        int model;
-        int hiz;
+        int model,hiz;
     public: 
     Araba(string marka, int model)
     {
