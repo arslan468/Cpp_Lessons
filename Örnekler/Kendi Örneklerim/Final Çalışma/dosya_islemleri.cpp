@@ -10,7 +10,6 @@ int main()
     selamlama();
     ofstream f;
     f.open("data.txt");
-
     if(f.is_open())
     {
         f << "Deneme\n";
@@ -22,9 +21,6 @@ int main()
         cout << "dosya açılamadı";
     }
 
-    
-
     veda();
-
     return 0;
 }

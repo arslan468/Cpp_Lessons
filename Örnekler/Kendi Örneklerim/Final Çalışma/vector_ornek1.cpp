@@ -6,7 +6,7 @@
 using namespace std;
 
 template <typename T>
-double ortalama(const vector <T>& v)
+T ortalama(const vector <T>& v)
 {
     double toplam=0;
     for(const T &x: v)
@@ -30,6 +30,20 @@ int enYuksek(const vector <t1>& v1)
     }
     return maks;   
 }
+
+template <typename t2>
+t2 enDusuk(const vector<t2>&v)
+{
+    t2 min = v.front();
+    for(const t2&x:v)
+    {
+        if(min>x)
+        {
+            min=x;
+        }
+    }
+    return min;
+}
  
 int main()
 {
@@ -49,6 +63,7 @@ int main()
         int enYuksekDeger = enYuksek(v);
         cout << "Girilen not sayısı: " << v.size()<<endl;
         cout << "Girdiğiniz en yüksek değer: " << enYuksekDeger<<endl;
+        cout << "Girdiğiniz en küçük değer: " << enDusuk(v)<<endl;
         cout << "Girdiğiniz sayıların ortalaması: " << ort<<endl;
     }
     else{

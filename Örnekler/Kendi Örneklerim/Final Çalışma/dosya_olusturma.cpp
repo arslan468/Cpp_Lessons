@@ -12,7 +12,7 @@ int main()
     selamlama();
     string satir;
 
-    ofstream f("dosya.txt");
+    ofstream f("dosya.txt",ios::app);
     if (!f)
     {
         cout << "Dosya oluşturulmadı\n";

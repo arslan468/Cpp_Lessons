@@ -6,28 +6,27 @@
 #include "../../selam.h"
 
 using namespace std;
- 
+
+
 int main()
 {
     selamlama();
     fstream f("hamsi.txt",ios::in);
-    ofstream g("guncel_hamsi.txt", ios::app);
-    if(!f || !g)
+    ofstream f1("guncel_hamsi.txt", ios::app);
+    if(!f || !f1)
     {
         cout << "Dosya açılamadı";
         return 1;
     }
     string anahtar;
     int deger;
-    int toplam;
-    while(f >> anahtar >> deger)
+    while (f>> anahtar >> deger)
     {
-        //cout << anahtar << "\t" << deger <<endl;
         deger+=10;
-        g<<anahtar<<"\t"<<deger<<endl;
+        f1<<anahtar <<"\t"<<deger<<endl;
     }
     f.close();
-    g.close();
+    f1.close();
     veda();
     return 0;
 }

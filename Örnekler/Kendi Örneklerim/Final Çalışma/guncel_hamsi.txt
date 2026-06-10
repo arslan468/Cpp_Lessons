@@ -2,5 +2,3 @@ mehmet	43
 alp	61
 yusuf	32
 eren	63
-alp arslan	42
-mehmet alp	341
