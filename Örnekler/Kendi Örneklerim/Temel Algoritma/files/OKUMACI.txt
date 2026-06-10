@@ -1,0 +1,337 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║              C++ PROGRAMLAMA SINAVI - KAPSAMLI ALGORITMA KIT             ║
+║                                                                            ║
+║                          Mehmet Alparslan İçin                            ║
+║                          Hazırlayan: Claude AI                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                           📚 DOSYALARIN ÖZETİ
+═══════════════════════════════════════════════════════════════════════════════
+
+Bu pakette 4 ana C++ dosyası bulunmaktadır:
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 1. cpp_sinav_algoritmalari_kapsamli.cpp (ANA DOSYA)                    │
+├─────────────────────────────────────────────────────────────────────────┤
+│ 📌 ÖZET:                                                                │
+│    - Sınavda sık çıkan tüm klasik algoritmaların tam uygulaması       │
+│    - Her biri hazır-kullanıma test case'lerle birlikte               │
+│    - main() fonksiyonunda çalıştırılabilir örnekler                 │
+│                                                                        │
+│ 📋 İÇERİK:                                                             │
+│    ✓ Asal sayı bulma (3 yöntem)                                      │
+│    ✓ Fibonacci (3 yöntem)                                            │
+│    ✓ Sayı işlemleri (faktöriyel, kombinasyon, EBOB/EKOK)            │
+│    ✓ Şekil çizme (10+ farklı şekil)                                 │
+│    ✓ Sıralamalar (Bubble, Selection, Insertion, Merge, Quick)       │
+│    ✓ Arama (Linear, Binary)                                         │
+│    ✓ String işlemleri (palindrom, karakter sayma vb.)              │
+│    ✓ Matris işlemleri (çarpım, transpoz, toplamlar)                │
+│                                                                        │
+│ 🚀 KULLANIM:                                                           │
+│    g++ -o sinav cpp_sinav_algoritmalari_kapsamli.cpp                │
+│    ./sinav                                                            │
+│                                                                        │
+│ ⏱️ ÇALIŞMA SÜRESİ: < 1 saniye                                          │
+│ 📊 SAT SAYISI: ~550                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 2. cpp_algoritmalari_detayli.cpp (ÖĞRETİCİ DOSYA)                      │
+├─────────────────────────────────────────────────────────────────────────┤
+│ 📌 ÖZET:                                                                │
+│    - Her algoritmanın teorik açıklaması                              │
+│    - Big O notation analizi                                          │
+│    - Ileri teknikler (Dynamic Programming, Greedy, Graph)           │
+│    - Detaylı yorum satırları                                        │
+│                                                                        │
+│ 📋 İÇERİK:                                                             │
+│    ✓ Recursion problemleri (9 örnek)                                │
+│    ✓ Geometrik şekiller (Pascal, Floyd, Kum Saati)                 │
+│    ✓ Advanced sorting (Counting Sort, Radix Sort)                  │
+│    ✓ Stack/Queue ile DFS/BFS                                       │
+│    ✓ Dynamic Programming (DP)                                      │
+│    ✓ Greedy algoritmaları                                          │
+│    ✓ Big O Notasyonu Kütüphanesi                                   │
+│    ✓ Algoritma Seçim Stratejisi                                    │
+│                                                                        │
+│ 🚀 KULLANIM:                                                           │
+│    g++ -o detayli cpp_algoritmalari_detayli.cpp                    │
+│    ./detayli                                                         │
+│                                                                        │
+│ 💡 AMAÇ: Sınavdan sonra derinlemesine anlama için                    │
+│ 📊 SAT SAYISI: ~700                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 3. cpp_sinav_sorulari.cpp (PRATIK SORULAR)                             │
+├─────────────────────────────────────────────────────────────────────────┤
+│ 📌 ÖZET:                                                                │
+│    - Gerçek sınav sorularına benzer 10 problem                      │
+│    - Her sorunun tam çözümü                                         │
+│    - İnteraktif menü sistemi                                        │
+│                                                                        │
+│ 📋 SORULAR:                                                            │
+│    1. Asal sayı kontrolü                                            │
+│    2. Armstrong sayıları bulma                                      │
+│    3. Fibonacci serisi                                              │
+│    4. Basamak tersi işlemi                                          │
+│    5. Asal çarpanlar                                                │
+│    6. EBOB ve EKOK                                                  │
+│    7. Bubble Sort (takas sayısı ile)                               │
+│    8. Linear ve Binary Search karşılaştırması                      │
+│    9. Palindrom kontrol                                             │
+│   10. Matris operasyonları                                          │
+│                                                                        │
+│ 🚀 KULLANIM:                                                           │
+│    g++ -o sorular cpp_sinav_sorulari.cpp                           │
+│    ./sorular                                                         │
+│    # Menüyü takip et ve soru numarası seç                          │
+│                                                                        │
+│ 💡 AMAÇ: Sınav öncesi pratik yapmak için                             │
+│ 📊 SAT SAYISI: ~400                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ 4. cpp_hizli_referans.cpp (HIZLI REFERANS)                            │
+├─────────────────────────────────────────────────────────────────────────┤
+│ 📌 ÖZET:                                                                │
+│    - Tüm algoritmaların "kopya-yapıştır" biçimde                   │
+│    - Sınav anında hızlıca kullanmak için optimize                  │
+│    - 10 yapabilir test case'i                                       │
+│                                                                        │
+│ 📋 İÇERİK:                                                             │
+│    ✓ 10 bölümde kategorize kod parçaları                           │
+│    ✓ Her algoritmanın en kısa formu                                │
+│    ✓ STL fonksiyonları hızlı referansı                            │
+│    ✓ Sınavda dikkat edilecek noktalar                             │
+│    ✓ Kontrol listesi                                               │
+│    ✓ 10 test case'i                                                │
+│                                                                        │
+│ 🚀 KULLANIM:                                                           │
+│    g++ -o referans cpp_hizli_referans.cpp                          │
+│    ./referans                                                        │
+│                                                                        │
+│ 💡 AMAÇ: Sınav esnasında kodu hızlıca kopyalamak için               │
+│ 📊 SAT SAYISI: ~350                                                    │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                      📋 SINAV ÖNCESİ HAZIRLIK PLANI
+═══════════════════════════════════════════════════════════════════════════════
+
+HFT-1: TEMELLERİ ANLA (2-3 gün)
+   ├─ cpp_sinav_algoritmalari_kapsamli.cpp'i derle ve çalıştır
+   ├─ Çıktıları incele, her algoritmanın ne yaptığını gözlemle
+   ├─ 5-10 soru manuel olarak çöz
+   └─ Hata bulma: Değişken isimleri, döngü koşulları
+
+HAFTA-2: ÖĞRENİM (3-4 gün)
+   ├─ cpp_algoritmalari_detayli.cpp'i oku
+   ├─ Big O notasyonunu anla
+   ├─ Her algoritmanın karmaşıklığını not et
+   ├─ Kendi başına kod yazmaya başla
+   └─ Zor gelen kısımları tekrar et
+
+HAFTA-3: PRATIK (2-3 gün)
+   ├─ cpp_sinav_sorulari.cpp'deki 10 soruyu çöz
+   ├─ Kod yazma süreni ölç
+   ├─ Her algoritmayı teker teker implement et
+   ├─ Hata günlüğü tut (yaygın hatalar)
+   └─ Online judge'da pratik yap
+
+SINAV GÜNÜ: HIZLI REFERANS (0-30 dk)
+   ├─ cpp_hizli_referans.cpp'i göz at
+   ├─ Kontrol listesini kontrol et
+   ├─ Kalp atışını normal seviyeye getir
+   ├─ Ilk problemi dikkatle oku
+   └─ Kodlamaya başla!
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                         🎯 SINAVDA KULLANILACAK
+═══════════════════════════════════════════════════════════════════════════════
+
+MUTLAKA BİL:
+  ✓ Asal sayı kontrolü (tüm yöntemler)
+  ✓ Fibonacci (iteratif tercih et)
+  ✓ Faktöriyel
+  ✓ EBOB (Euclid)
+  ✓ Bubble Sort ve Selection Sort
+  ✓ Linear Search
+  ✓ Binary Search (sıralı dizi için)
+  ✓ Palindrom kontrolü
+  ✓ String işlemleri
+  ✓ Matris transpozesi
+
+BILEN BİRİ AVANTAJ SAHİBİ:
+  • Merge Sort, Quick Sort
+  • Dynamic Programming
+  • DFS, BFS
+  • Greedy algoritmaları
+  • Advanced pattern printing
+
+SINAV ÇIKIŞ SONRASI:
+  • cpp_algoritmalari_detayli.cpp'i okumaya devam et
+  • Kendi başına projeler yap
+  • LeetCode/HackerRank'te pratik yap
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                      ⚠️ SINAV ESNASINDA DIKKAT
+═══════════════════════════════════════════════════════════════════════════════
+
+SORULARI OKURKEN:
+  □ Soruyu 2-3 kez oku
+  □ Örnekleri (input/output) dikkatlice anla
+  □ Edge case'leri belirle
+  □ Algoritma seçimini yap
+
+KODLAMADAN ÖNCE:
+  □ Pseudocode yazabilirsin
+  □ Döngü koşullarını kontrol et
+  □ Array bounds'u kontrol et
+  □ Integer overflow konusuna dikkat
+
+KODLAMADA:
+  □ Değişkenleri anlamlı isimlendir
+  □ Yorum satırları koy (karışık kısımlara)
+  □ Base case'leri (loop başlangıç/bitiş) kontrol et
+  □ Off-by-one error'lara dikkat et
+
+SONUÇ AŞAMASINDA:
+  □ Kodunu 1 kez tekrar oku
+  □ Verilen örnekle test et
+  □ Output formatını kontrol et
+  □ Gereksiz satırları sil
+
+YAYGIIN HATALAR:
+  ❌ Array indexini 1'den başlatmak (0'dan başla!)
+  ❌ Sonsuz döngü (döngü koşulunu kontrol et)
+  ❌ Initialize etmeyen değişkenler
+  ❌ Kütüphane header'larını unutmak
+  ❌ main() olmadan kod yazma
+  ❌ String'lere char olarak atama
+  ❌ Integer overflow (büyük sayılar için long long)
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                       📊 ALGORITMA HIZLI KARŞILAŞTIRMA
+═══════════════════════════════════════════════════════════════════════════════
+
+SIRALAMALAR:
+┌─────────────┬──────────┬──────────┬──────────┬────────┐
+│ Algoritma   │ Best     │ Average  │ Worst    │ Space  │
+├─────────────┼──────────┼──────────┼──────────┼────────┤
+│ Bubble      │ O(n)     │ O(n²)    │ O(n²)    │ O(1)   │
+│ Selection   │ O(n²)    │ O(n²)    │ O(n²)    │ O(1)   │
+│ Insertion   │ O(n)     │ O(n²)    │ O(n²)    │ O(1)   │
+│ Merge       │ O(nlogn) │ O(nlogn) │ O(nlogn) │ O(n)   │
+│ Quick       │ O(nlogn) │ O(nlogn) │ O(n²)    │ O(log) │
+│ Heap        │ O(nlogn) │ O(nlogn) │ O(nlogn) │ O(1)   │
+└─────────────┴──────────┴──────────┴──────────┴────────┘
+
+ARAMA:
+┌─────────────┬──────────┬─────────────────────┐
+│ Algoritma   │ Zaman    │ Koşullar            │
+├─────────────┼──────────┼─────────────────────┤
+│ Linear      │ O(n)     │ Her zaman çalışır   │
+│ Binary      │ O(logn)  │ Sıralı dizi gerekli │
+│ Hash Table  │ O(1)     │ Average durumda     │
+└─────────────┴──────────┴─────────────────────┘
+
+SAYISAL:
+┌─────────────┬──────────┬──────────────────────┐
+│ İşlem       │ Zaman    │ Not                  │
+├─────────────┼──────────┼──────────────────────┤
+│ Asal kontrol│ O(√n)    │ Çok hızlı            │
+│ Fibonacci   │ O(n)     │ Iteratif tercih et   │
+│ Faktöriyel  │ O(n)     │ Overflow'a dikkat    │
+│ EBOB        │ O(log n) │ Euclid algoritması   │
+└─────────────┴──────────┴──────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                         💬 SINAVDA ÇIKABILECEK SORULAR
+═══════════════════════════════════════════════════════════════════════════════
+
+TIP 1: "Yazınız / Kodlayınız"
+  • Asal sayı bul
+  • Fibonacci serisini yaz
+  • Diziyi sırala
+  • Şekil çiz
+
+TIP 2: "N'den M'ye kadar..."
+  • 1'den 100'e kadar asal sayılar
+  • 50'den 100'e kadar mükemmel sayılar
+  • 10 tane Fibonacci
+
+TIP 3: "Karşılaştır"
+  • Linear vs Binary search
+  • Bubble vs Selection sort
+  • Recursive vs Iterative
+
+TIP 4: "Analiz et"
+  • Big O notation nedir?
+  • Neden Binary Search hızlı?
+  • Merge Sort ne zaman kullanılır?
+
+TIP 5: "Hata bul"
+  • Kodun hatalarını düzelt
+  • Çıktıyı tahmin et
+  • Döngü sayısını say
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                         📞 SORUN ÇÖZÜMÜ REHBERI
+═══════════════════════════════════════════════════════════════════════════════
+
+❓ "Kod çalıştığında hata veriyor"
+  → Compiler hatası mı, runtime hatası mı? Kontrolü et
+  → Syntax hatası: Parantez, noktalı virgül, #include
+  → Logic hatası: Döngü koşulu, değişken initialize
+
+❓ "Sonsuz döngüye girdi"
+  → Döngü çıkış koşulunu kontrol et
+  → break; kullanman gerekir mi?
+  → Döngü değişkeni doğru artıyor mu?
+
+❓ "Yanlış sonuç alıyor"
+  → Örnek input'la test et
+  → Değişkenleri print et (debug)
+  → Logic adım adım gez
+
+❓ "Integer taşması (Overflow)"
+  → long long kullan
+  → Modulo operatörü kullan
+  → Büyük çarpımlardan dikkat et
+
+❓ "Array indexi şaşıyor"
+  → 0 tabanlı indexleme (0 to n-1)
+  → Sınırları kontrol et (i < n)
+  → Off-by-one error'u bul
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                              🎓 SON SÖZ
+═══════════════════════════════════════════════════════════════════════════════
+
+Bu kit, size programlama sınavında başarı için gereken tüm araçları sağlar.
+Ancak başarı, sadece kod kopya etmekle değil, algoritmaları anlamakla gelir.
+
+BAŞARILAMA KIŞ:
+  1. Algoritmaları anla (why)
+  2. Nasıl çalıştığını öğren (how)
+  3. Kod yazarak pratik yap (do)
+  4. Hata yap ve düzelt (fix)
+
+Her gün az biraz çalışsan, sınav günü hazırlanmış olursun.
+Kolay gelsin! 🚀
+
+                        İyi Çalışmalar, Başarılar!
+                        (Mehmet Alparslan için hazırlandı)
+
+═══════════════════════════════════════════════════════════════════════════════
